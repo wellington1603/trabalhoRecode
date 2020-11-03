@@ -6,12 +6,10 @@
         <link rel="stylesheet" href="estilo.css">
     </head>
     <body>
-        <nav class="menu">
-            <a href="index.html"><img src="./img/logo.jpg" width="120px"></a>
-            <a href="produtos.html">Nossos produtos</a>
-            <a href="loja.html">Nossas lojas</a>
-            <a href="contato.html">Fale conosco</a>                
-        </nav>
+        <!--Menu-->
+        <?php
+            include('menu.html');
+        ?>
         <main>
             <h2>Seja bem vindo(a)!</h2>
             <p>Aqui em nossa loja, <b>programadores tem desconto</b> em nossos produtos.</p>

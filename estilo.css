@@ -4,9 +4,19 @@ body{
 #conteudo{
     display: flex;
 }
-.categoria{
-    width: 250px;
+.categoria-prod{
+    width: 180px;
+
 }
+li{
+    cursor: pointer;
+}
+.produtos{
+    display: flex;
+    max-width: 1100px;
+    flex-wrap: wrap;
+}
+
 
 .menu{
     text-align: justify;
@@ -27,19 +37,18 @@ body{
 
 }
 .container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 10fr;
     text-align: center;
 }
 
 
-.linha{
-    width: 100%;
-    display: flex;
-}
-
 .item{
     width: 350px;
-    height: 500px;    
+    height: 400px;    
     padding: 5px;
+    
 }
 
 .preco{

@@ -7,12 +7,9 @@
     </head>
     <body>
         <!--Começo menu-->        
-        <nav class="menu">
-            <a href="index.html"><img src="./img/logo.jpg" width="120px"></a>
-            <a href="produtos.html">Nossos produtos</a>
-            <a href="loja.html">Nossas lojas</a>
-            <a href="contato.html">Fale conosco</a>                
-        </nav>
+        <?php
+            include('menu.html');
+        ?>
         <!--fim menu-->
         <h2>Nossas lojas</h2>
         <hr>
