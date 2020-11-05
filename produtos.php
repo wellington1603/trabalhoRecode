@@ -2,7 +2,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "fullstack";
+    $database = "fullstrack";
 
     //criando conexão
     $coon = mysqli_connect($servername, $username, $password, $database);
@@ -12,7 +12,6 @@
         die("A conexão ao BD falhou". mysli_connect_error());
     }    
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -29,14 +28,16 @@
             include('menu.html');
         ?>
         <!--Fim Menu-->
+       
+        <section class="container-fluid" style="text-align: center; margin-top: 30px">
         <header>
             <h1>Produtos</h1>
         </header>
         
         <hr>
     
-        <section class="container">
-            <div class="categoria-prod">
+        <div class="row">
+            <div class="categoria-prod col-2 " >
                 <section class="categoria">
                     <h3 style="background: #1E90FF;">Categorias</h3>
                     <ul>
@@ -48,7 +49,7 @@
                     </ul>
                </section>
             </div>
-            <div class="produtos">
+            <div class="produtos col">
         <?php 
             $sql = "select * from produto";
             $result = $coon->query($sql);
@@ -75,7 +76,7 @@
         ?>
 
                
-                
+    </div>   
         </section> 
 
         <footer id="rodape">

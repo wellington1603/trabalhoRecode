@@ -2,7 +2,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "fullstack";
+    $database = "fullstrack";
 
     //criando conexão
     $coon = mysqli_connect($servername, $username, $password, $database);
@@ -53,15 +53,18 @@
                 </td>
             </tr>
 
-            <form method="post" action="">
-                Nome:<br>
-                <input type="text" name="nome" style="width: 500px;"><br>
-                Mensagem:<br>
-                <input type="text" name="msg" style="width: 500px"><br>
+            
+            <form method="post" action="" class="form-inline">
+                <div style="margin: 0px 0px 30px 30px;">
+                    Nome:<br>
+                    <input type="text" name="nome" placeholder="Nome completo" class="form-control mr-sm-2" style="width: 500px;"><br>
+                    Mensagem:<br>
+                    <input type="text" name="msg" placeholder= "Digite sua mensagem..." class="form-control mr-sm-2" style="width: 500px"><br>
 
-                <input type="submit" name="submit" value="Enviar"><br>
+                    <input type="submit" name="submit" value="Enviar" class="btn btn-secondary" ><br>
+                </div>
             </form>
-
+        
          <?php 
             $sql = "select * from comentarios";
             $result = $coon->query($sql);
